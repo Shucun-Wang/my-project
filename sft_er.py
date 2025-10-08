@@ -25,7 +25,6 @@ class SFTClassificationDataset(Dataset):
         self.max_length = max_length
         self.data = []
 
-        # 从 .jsonl 文件中逐行读取数据
         with open(jsonl_path, 'r', encoding='utf-8') as f:
             for line in f:
                 self.data.append(json.loads(line.strip()))
