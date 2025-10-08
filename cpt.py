@@ -241,7 +241,7 @@ if __name__ == "__main__":
     writer = SummaryWriter('runs/cpt')
 
     # Prepare dataloader
-    data_path = "/train14/psc/permanent/scwang16/datatrain"
+    data_path = ""
     train_loader, valid_loader = prepare_dataloader(data_path, args.batch_size, mode='cpt')
     # test_loader = prepare_dataloader(data_path, B, mode='test')
 
